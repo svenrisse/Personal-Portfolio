@@ -7,7 +7,7 @@
     </nav>
 </template>
 
-<style>
+<style lang="scss">
     .navbar {
         position: fixed;
         right: 4vw;
