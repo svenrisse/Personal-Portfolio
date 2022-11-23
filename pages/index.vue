@@ -17,5 +17,6 @@
 
             </p>
         </div>
+        <Socials />
     </div>
 </template>
