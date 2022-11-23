@@ -15,6 +15,15 @@
 <script setup lang="ts"></script>
 
 <style lang="scss">
+.socials {
+    position: fixed;
+    left: 1%;
+    bottom: 5%;
+    height: 17.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 a {
     color: var(--white);
     &:hover {
