@@ -1,5 +1,6 @@
 <template>
     <div class="app">
+        <Logo />
         <Navbar />
         <div class="app-main">
             <span>Hi, my name is </span>
@@ -15,3 +16,4 @@
         <Socials />
     </div>
 </template>
+
