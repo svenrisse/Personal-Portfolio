@@ -20,7 +20,7 @@
 <style lang="scss">
 .socials {
     position: fixed;
-    left: 1%;
+    left: 3%;
     bottom: 5%;
     height: 17.5vh;
     display: flex;
