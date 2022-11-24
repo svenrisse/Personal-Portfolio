@@ -27,10 +27,5 @@
     flex-direction: column;
     justify-content: space-between;
 }
-a {
-    color: var(--white);
-    &:hover {
-        color: var(--vue-green);
-    }
-}
+
 </style>
