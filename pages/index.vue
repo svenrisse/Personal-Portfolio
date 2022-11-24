@@ -10,7 +10,7 @@
                 I'm a software engineer, with a passion for new and exiting
                 technologies and frameworks. <br />
                 Currently, I'm focused on diving deep into Frontend Development
-                with Vue and Nuxt.
+                with Vue and Nuxt, and taking first steps into the Backend with Node.js.
             </p>
         </div>
         <Socials />
