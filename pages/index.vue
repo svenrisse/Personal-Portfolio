@@ -14,6 +14,7 @@
             </p>
         </div>
         <Socials />
+        <Mail />
     </div>
 </template>
 
