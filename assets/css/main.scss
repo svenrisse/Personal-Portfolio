@@ -25,6 +25,12 @@ body {
     color: var(--white);
     font-family: var(--font-sans);
 }
+a {
+    color: var(--white);
+    &:hover {
+        color: var(--vue-green);
+    }
+}
 
 .app {
     height: 100vh;
