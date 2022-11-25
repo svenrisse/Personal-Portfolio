@@ -2,7 +2,6 @@
 import { stat } from "fs";
 import { ref } from "vue";
 
-const work = ref("Händlerbund")
 const state = ref([
     {
         status: false,
@@ -50,7 +49,9 @@ function setState(index: number) {
                         Studies
                     </button>
                 </div>
-                <WorkExample v-if="work"/>
+                <WorkExample v-if="state[0].status" jobTitle="Web Developer" company="Händlerbund" startDate="September 2022" endDate="Present" workDescriptionOne="" workDescriptionTwo="" workDescriptionThree=""/>
+                <WorkExample v-if="state[1].status" jobTitle="Soldier" company="Bundeswehr" startDate="October 2020" endDate="July 2022" workDescriptionOne="" workDescriptionTwo="" workDescriptionThree=""/>
+                <WorkExample v-if="state[2].status" jobTitle="Student" company="Martin Luther University" startDate="October 2018" endDate="September 2020" workDescriptionOne="" workDescriptionTwo="" workDescriptionThree=""/>
             </div>
         </div>
         <Socials />
