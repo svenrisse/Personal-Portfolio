@@ -1,4 +1,9 @@
 <template>
     <Logo />
-    Hello this is the about page :) 
+    <Navbar />
+    <div class="app-main">
+
+    </div>
+    <Socials />
+    <Mail />
 </template>

@@ -1,4 +1,9 @@
 <template>
     <Logo />
-    This is the contact Page WIP
+    <Navbar />
+    <div class="app-main">
+
+    </div>
+    <Socials />
+    <Mail />
 </template>
