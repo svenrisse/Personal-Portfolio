@@ -40,7 +40,7 @@ function setState(index: number) {
                         :class="{ active: state[1].status }"
                         @click="setState(1)"
                     >
-                        Voluntary military service
+                        Military service
                     </button>
                     <button
                         :class="{ active: state[2].status }"
@@ -49,9 +49,39 @@ function setState(index: number) {
                         Studies
                     </button>
                 </div>
-                <WorkExample v-if="state[0].status" jobTitle="Web Developer" company="Händlerbund" startDate="September 2022" endDate="Present" workDescriptionOne="" workDescriptionTwo="" workDescriptionThree=""/>
-                <WorkExample v-if="state[1].status" jobTitle="Soldier" company="Bundeswehr" startDate="October 2020" endDate="July 2022" workDescriptionOne="" workDescriptionTwo="" workDescriptionThree=""/>
-                <WorkExample v-if="state[2].status" jobTitle="Student" company="Martin Luther University" startDate="October 2018" endDate="September 2020" workDescriptionOne="" workDescriptionTwo="" workDescriptionThree=""/>
+
+                <WorkExample
+                    v-if="state[0].status"
+                    jobTitle="Web Developer"
+                    company="Händlerbund"
+                    startDate="September 2022"
+                    endDate="Present"
+                    workDescriptionOne="Im currently in training to be a web developer at Händlerbund in cooperation with YAY! Digital."
+                    workDescriptionTwo=""
+                    workDescriptionThree=""
+                />
+
+                <WorkExample
+                    v-if="state[1].status"
+                    jobTitle="Soldier"
+                    company="Bundeswehr"
+                    startDate="October 2020"
+                    endDate="July 2022"
+                    workDescriptionOne="After deciding to quit my studies, corona was starting to gain traction in europe, and with the situation being unpredictable I decided to join the military for my voluntary service."
+                    workDescriptionTwo="I worked in the medical service in a doctor's office for soldiers. My main tasks where organizing and communicating with patients while also ensuring the doctors could work without any hinderance."
+                    workDescriptionThree="Of course I learned a huge amount and matured a lot, like you would expect from 2 years serving in the military. But this was also the time when I started coding for fun in my free time and found my passion for it, and decided to pursue a career in software development."
+                />
+
+                <WorkExample
+                    v-if="state[2].status"
+                    jobTitle="Student"
+                    company="Martin Luther University"
+                    startDate="October 2018"
+                    endDate="September 2020"
+                    workDescriptionOne="After completing my Abitur in 2018, I decided to start studying to be a teacher for Math and English in Halle."
+                    workDescriptionTwo="I learned a lot while in university like organizing my work and being independent while also greatly increasing my communication and team skills."
+                    workDescriptionThree="Unfortunatly I had to realize that teaching was not the path I intend to tread for life."
+                />
             </div>
         </div>
         <Socials />
@@ -60,6 +90,9 @@ function setState(index: number) {
 </template>
 
 <style lang="scss">
+.work-main {
+    display: flex;
+}
 .work-buttons {
     display: flex;
     flex-direction: column;
