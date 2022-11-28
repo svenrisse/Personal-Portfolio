@@ -35,6 +35,7 @@ const props = defineProps<{
         font-size: 3.5rem;
         width: 50vw;
         margin-bottom: 2vh;
+        margin-top: 0;
     }
 
     .work-company {
