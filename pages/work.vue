@@ -57,7 +57,7 @@ function setState(index: number) {
                     startDate="September 2022"
                     endDate="Present"
                     workDescriptionOne="Im currently in training to be a web developer at Händlerbund in cooperation with YAY! Digital."
-                    workDescriptionTwo=""
+                    workDescriptionTwo="What I learned so far includes: Shopify, Vue, Nuxt"
                     workDescriptionThree=""
                 />
 
@@ -92,26 +92,27 @@ function setState(index: number) {
 <style lang="scss">
 .work-main {
     display: flex;
-}
-.work-buttons {
-    display: flex;
-    flex-direction: column;
-    max-width: 10vw;
-    button {
-        height: 7vh;
-        background-color: var(--navy);
-        border: 0;
-        color: var(--white);
-        font-size: 20px;
-        cursor: pointer;
-        border-radius: 10px;
-        &:hover {
-            color: var(--vue-green);
-            background-color: var(--vue-dark);
+
+    .work-buttons {
+        display: flex;
+        flex-direction: column;
+        min-width: 10vw;
+        button {
+            height: 7vh;
+            background-color: var(--navy);
+            border: 0;
+            color: var(--white);
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 10px;
+            &:hover {
+                color: var(--vue-green);
+                background-color: var(--vue-dark);
+            }
         }
-    }
-    .active {
-        color: var(--vue-green);
+        .active {
+            color: var(--vue-green);
+        }
     }
 }
 </style>
