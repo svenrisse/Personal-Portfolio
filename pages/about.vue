@@ -4,8 +4,14 @@
         <Navbar />
         <div class="app-main">
             <h1>
-                This is still Work in Progress. Please come back later :)
+                About Me
             </h1> 
+            <p>
+                Hello! My name is Sven and I'm currently learning web development. 
+            </p>
+            <p>
+                I spend my free time reading science fiction and fantasy novels, cooking and powerlifting when not writing code. 
+            </p>
         </div>
         <Socials />
         <Mail />
