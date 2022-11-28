@@ -27,7 +27,7 @@ function setState(index: number) {
         <Logo />
         <Navbar />
         <div class="app-main">
-            <h1>My Career</h1>
+            <h1 class="work-header">My Career</h1>
             <div class="work-main">
                 <div class="work-buttons">
                     <button
@@ -90,19 +90,26 @@ function setState(index: number) {
 </template>
 
 <style lang="scss">
+.work-header {
+    text-align: center;
+    margin-bottom: 5vh;
+    font-size: 2.5rem;
+}
+
 .work-main {
     display: flex;
 
     .work-buttons {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         min-width: 10vw;
         button {
             height: 7vh;
             background-color: var(--navy);
             border: 0;
             color: var(--white);
-            font-size: 20px;
+            font-size: 1.5rem;
             cursor: pointer;
             border-radius: 10px;
             &:hover {
