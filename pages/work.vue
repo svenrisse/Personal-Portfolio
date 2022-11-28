@@ -67,9 +67,9 @@ function setState(index: number) {
                     company="Bundeswehr"
                     startDate="October 2020"
                     endDate="July 2022"
-                    workDescriptionOne="After deciding to quit my studies, corona was starting to gain traction in europe, and with the situation being unpredictable I decided to join the military for my voluntary service."
+                    workDescriptionOne="After deciding to quit my studies, corona was starting to gain traction in europe and with the situation being unpredictable I decided to join the military for my voluntary service."
                     workDescriptionTwo="I worked in the medical service in a doctor's office for soldiers. My main tasks where organizing and communicating with patients while also ensuring the doctors could work without any hinderance."
-                    workDescriptionThree="Of course I learned a huge amount and matured a lot, like you would expect from 2 years serving in the military. But this was also the time when I started coding for fun in my free time and found my passion for it, and decided to pursue a career in software development."
+                    workDescriptionThree="Of course I learned a huge amount and matured a lot like you would expect from 2 years serving in the military. This was also the time when I started coding for fun in my free time and found my passion for web development and decided to pursue a career in software development."
                 />
 
                 <WorkExample
