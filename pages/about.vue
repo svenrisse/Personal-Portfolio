@@ -10,24 +10,24 @@
                     id="logo-about"
                 />
                 <h1>About Me</h1>
-                <p>
+                <p id="about-1">
                     Hello! My name is Sven and I'm passionate for creating
                     things on the internet. My journey in Web Development
                     started in 2021 when I started learning the basics of HTML,
                     CSS and JavaScript.
                 </p>
-                <p>
+                <p id="about-2">
                     Fast-forward to today and I've decided to pursue a career in
                     Fullstack Development and am currently in training at
                     Händlerbund and YAY! Digital.
                 </p>
-                <p>
+                <p id="about-3">
                     Most of my free time is spent reading science fiction and
                     fantasy novels, cooking and powerlifting when not currently
                     writing code and working on side projects.
                 </p>
 
-                <div class="app-about__tech">
+                <div class="app-about__tech" id="about-4">
                     <span class="header">My Tech Stack</span>
                     <div class="icons">
                         <a
@@ -128,7 +128,38 @@
     p {
         font-size: 1.5rem;
     }
-    
+
+    #about-1 {
+        -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+        -o-animation: fadein 2s; /* Opera < 12.1 */
+        animation: fadein 2s;
+    }
+
+    #about-2 {
+        -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+        -o-animation: fadein 3s; /* Opera < 12.1 */
+        animation: fadein 3s;
+    }
+
+    #about-3 {
+        -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+        -o-animation: fadein 4s; /* Opera < 12.1 */
+        animation: fadein 4s;
+    }
+
+    #about-4 {
+        -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+        -o-animation: fadein 4s; /* Opera < 12.1 */
+        animation: fadein 4s;
+    }
     .app-about__tech {
         display: flex;
         flex-direction: column;
@@ -140,7 +171,7 @@
             margin-top: 2vh;
             margin-bottom: 2vh;
         }
-        
+
         .icons {
             .tech-icon {
                 margin-left: 1.5vw;
