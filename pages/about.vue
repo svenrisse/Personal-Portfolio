@@ -26,6 +26,92 @@
                     fantasy novels, cooking and powerlifting when not currently
                     writing code and working on side projects.
                 </p>
+
+                <div class="app-about__tech">
+                    <span class="header">My Tech Stack</span>
+                    <div class="icons">
+                        <a
+                            href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5?retiredLocale=de"
+                            class="tech-icon"
+                            title="HTML5"
+                        >
+                            <Icon
+                                name="vscode-icons:file-type-html"
+                                size="3.5rem"
+                            />
+                        </a>
+                        <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                            class="tech-icon"
+                            title="CSS3"
+                        >
+                            <Icon
+                                name="vscode-icons:file-type-css"
+                                size="3.5rem"
+                            />
+                        </a>
+                        <a
+                            href="https://sass-lang.com/"
+                            class="tech-icon"
+                            title="SCSS"
+                        >
+                            <Icon
+                                name="vscode-icons:file-type-sass"
+                                size="3.5rem"
+                            />
+                        </a>
+                        <a
+                            href="https://www.javascript.com/"
+                            class="tech-icon"
+                            title="JavaScript"
+                        >
+                            <Icon
+                                name="vscode-icons:file-type-js-official"
+                                size="3.5rem"
+                            />
+                        </a>
+                        <a
+                            href="https://www.typescriptlang.org/"
+                            class="tech-icon"
+                            title="TypeScript"
+                        >
+                            <Icon
+                                name="vscode-icons:file-type-typescript-official"
+                                size="3.5rem"
+                            />
+                        </a>
+                        <a
+                            href="https://reactjs.org/"
+                            class="tech-icon"
+                            title="React.js"
+                        >
+                            <Icon
+                                name="vscode-icons:file-type-reactjs"
+                                size="3.5rem"
+                            />
+                        </a>
+                        <a
+                            href="https://vuejs.org/"
+                            class="tech-icon"
+                            title="Vue.js"
+                        >
+                            <Icon
+                                name="vscode-icons:file-type-vue"
+                                size="3.5rem"
+                            />
+                        </a>
+                        <a
+                            href="https://nuxtjs.org/"
+                            class="tech-icon"
+                            title="Nuxt.js"
+                        >
+                            <Icon
+                                name="vscode-icons:file-type-nuxt"
+                                size="3.5rem"
+                            />
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         <Socials />
@@ -41,6 +127,25 @@
 
     p {
         font-size: 1.5rem;
+    }
+    
+    .app-about__tech {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .header {
+            font-size: 2rem;
+            font-family: var(--font-mono);
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+        }
+        
+        .icons {
+            .tech-icon {
+                margin-left: 1.5vw;
+            }
+        }
     }
 }
 
