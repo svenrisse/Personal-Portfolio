@@ -94,6 +94,7 @@ function setState(index: number) {
     text-align: center;
     margin-bottom: 5vh;
     font-size: 2.5rem;
+    font-family: var(--font-mono);
 }
 
 .work-main {
