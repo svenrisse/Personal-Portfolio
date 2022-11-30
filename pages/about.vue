@@ -9,22 +9,22 @@
                     alt="Logo"
                     id="logo-about"
                 />
-                <h1>About Me</h1>
+                <h1 id="about-header">About Me</h1>
                 <p id="about-1">
-                    Hello! My name is Sven and I'm passionate for creating
-                    things on the internet. My journey in Web Development
-                    started in 2021 when I started learning the basics of HTML,
-                    CSS and JavaScript.
+                    Hello! My name is Sven and I'm passionately creating
+                    things on the internet. My journey in <span class="about-green">Web Development</span> 
+                    started in 2021 when I started learning the basics of <span class="about-green">HTML</span>,
+                    <span class="about-green">CSS</span> and <span class="about-green">JavaScript</span>.
                 </p>
                 <p id="about-2">
                     Fast-forward to today and I've decided to pursue a career in
-                    Fullstack Development and am currently in training at
-                    Händlerbund and YAY! Digital.
+                    <span class="about-green"> Fullstack Development </span> and am currently in training at
+                    <span class="about-green"> Händlerbund </span> and <span class="about-green"> YAY! Digital </span>.
                 </p>
                 <p id="about-3">
-                    Most of my free time is spent reading science fiction and
-                    fantasy novels, cooking and powerlifting when not currently
-                    writing code and working on side projects.
+                    Most of my free time is spent <span class="about-green"> reading </span> science fiction and
+                    fantasy novels, <span class="about-green"> cooking </span> and <span class="about-green"> powerlifting </span> when not currently
+                    writing code and working on <span class="about-green"> side projects </span>.
                 </p>
 
                 <div class="app-about__tech" id="about-4">
@@ -128,7 +128,9 @@
     p {
         font-size: 1.5rem;
     }
-
+    #about-header {
+        font-family: var(--font-mono);
+    }
     #about-1 {
         -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
         -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -159,6 +161,10 @@
         -ms-animation: fadein 4s; /* Internet Explorer */
         -o-animation: fadein 4s; /* Opera < 12.1 */
         animation: fadein 4s;
+    }
+
+    .about-green {
+        color: var(--vue-green);
     }
     .app-about__tech {
         display: flex;
