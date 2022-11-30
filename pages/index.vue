@@ -2,7 +2,7 @@
     <div class="app">
         <Logo />
         <Navbar />
-        <div class="app-main">
+        <div class="app-index">
             <span class="intro-greeting">Hi, my name is </span>
             <h1 class="intro-name">Sven Risse.</h1>
             <h1 class="intro-description">I'm an aspiring  <span id="intro-description__job"> fullstack web developer</span>.</h1>
@@ -19,6 +19,11 @@
 </template>
 
 <style lang="scss">
+
+.app-index {
+    width: 50vw;
+    margin-top: 20vh;
+}
 .intro-greeting {
     font-size: 24px;
     color: var(--light-slate);

@@ -25,7 +25,7 @@ function setState(index: number) {
     <div class="app">
         <Logo />
         <Navbar />
-        <div class="app-main">
+        <div class="app-work">
             <h1 class="work-header">My Career</h1>
             <div class="work-main">
                 <div class="work-buttons">
@@ -89,6 +89,11 @@ function setState(index: number) {
 </template>
 
 <style lang="scss">
+
+.app-work {
+    width: 50vw;
+    margin-top: 20vh;
+}
 .work-header {
     text-align: center;
     margin-bottom: 5vh;
