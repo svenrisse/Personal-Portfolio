@@ -6,11 +6,11 @@
         <a href="https://www.linkedin.com/in/sven-risse-3b2262251/">
             <Icon name="uil:linkedin" size="2.5rem" class="socials-icon" />
         </a>
-        <a href="mailto:sven@srisse.dev">
-            <Icon name="material-symbols:mail-rounded" size="2.5rem" class="socials-icon" />
-        </a>
         <a href="https://www.xing.com/profile/Sven_Risse2/cv">
             <Icon name="mdi:xing" size="2.5rem" class="socials-icon"/>
+        </a>
+        <a href="mailto:sven@srisse.dev">
+            <Icon name="material-symbols:mail-rounded" size="2.5rem" class="socials-icon" />
         </a>
     </div>
 </template>
