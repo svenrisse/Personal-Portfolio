@@ -30,8 +30,8 @@ defineProps<{
 .project-example {
     display: flex;
     img {
-        height: 20vh;
-        padding: 1rem;
+        height: 30vh;
+        width: 27.5vw;
         border: 1px solid var(--vue-green);
         border-radius: 10px;
     }
