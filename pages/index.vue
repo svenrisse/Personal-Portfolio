@@ -22,7 +22,7 @@
 
 .app-index {
     width: 50vw;
-    margin-top: 20vh;
+    margin-top: 25vh;
 }
 .intro-greeting {
     font-size: 24px;
