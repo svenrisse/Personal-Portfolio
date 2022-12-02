@@ -63,6 +63,10 @@ const projects = ref([
 </template>
 
 <style lang="scss">
+.projects-header {
+    text-align: center;
+    font-family: var(--font-mono);
+}
 .app-projects {
     margin-top: 20vh;
     width: 50vw;
