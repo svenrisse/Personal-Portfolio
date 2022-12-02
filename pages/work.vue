@@ -1,23 +1,52 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-const state = ref([
+const workExample = ref([
     {
         status: true,
+        jobTitle: "Web Developer",
+        company: "Händlerbund",
+        startDate: "September 2022",
+        endDate: "Present",
+        workDescriptionOne:
+            "Im currently in training to be a web developer at Händlerbund in cooperation with YAY! Digital.",
+        workDescriptionTwo:
+            "What I learned so far includes: Shopify, Vue, Nuxt",
+        workDescriptionThree: "",
     },
     {
         status: false,
+        jobTitle: "Soldier",
+        company: "Bundeswehr",
+        startDate: "October 2020",
+        endDate: "July 2022",
+        workDescriptionOne:
+            "After deciding to quit my studies, corona was starting to gain traction in europe and with the situation being unpredictable I decided to join the military for my voluntary service.",
+        workDescriptionTwo:
+            "I worked in the medical service in a doctor's office for soldiers. My main tasks where organizing and communicating with patients while also ensuring the doctors could work without any hinderance.",
+        workDescriptionThree:
+            "Of course I learned a huge amount and matured a lot like you would expect from 2 years serving in the military. This was also the time when I started coding for fun in my free time and found my passion for web development and decided to pursue a career in software development.",
     },
     {
         status: false,
+        jobTitle: "Student",
+        company: "Martin Luther University",
+        startDate: "October 2018",
+        endDate: "September 2020",
+        workDescriptionOne:
+            "After completing my Abitur in 2018, I decided to start studying to be a teacher for Math and English in Halle.",
+        workDescriptionTwo:
+            "I learned a lot while in university like organizing my work and being independent while also greatly increasing my communication and team skills.",
+        workDescriptionThree:
+            "Unfortunatly I had to realize that teaching was not the path I intend to tread for life.",
     },
 ]);
 
-function setState(index: number) {
-    state.value.forEach((item) => {
+function setworkExample(index: number) {
+    workExample.value.forEach((item) => {
         item.status = false;
     });
-    state.value[index].status = !state.value[index].status;
+    workExample.value[index].status = !workExample.value[index].status;
 }
 </script>
 
@@ -30,57 +59,38 @@ function setState(index: number) {
             <div class="work-main">
                 <div class="work-buttons">
                     <button
-                        :class="{ active: state[0].status }"
-                        @click="setState(0)"
+                        :class="{ active: workExample[0].status }"
+                        @click="setworkExample(0)"
                     >
                         Händlerbund
                     </button>
                     <button
-                        :class="{ active: state[1].status }"
-                        @click="setState(1)"
+                        :class="{ active: workExample[1].status }"
+                        @click="setworkExample(1)"
                     >
                         Military service
                     </button>
                     <button
-                        :class="{ active: state[2].status }"
-                        @click="setState(2)"
+                        :class="{ active: workExample[2].status }"
+                        @click="setworkExample(2)"
                     >
                         Studies
                     </button>
                 </div>
 
-                <WorkExample
-                    v-if="state[0].status"
-                    jobTitle="Web Developer"
-                    company="Händlerbund"
-                    startDate="September 2022"
-                    endDate="Present"
-                    workDescriptionOne="Im currently in training to be a web developer at Händlerbund in cooperation with YAY! Digital."
-                    workDescriptionTwo="What I learned so far includes: Shopify, Vue, Nuxt"
-                    workDescriptionThree=""
-                />
-
-                <WorkExample
-                    v-if="state[1].status"
-                    jobTitle="Soldier"
-                    company="Bundeswehr"
-                    startDate="October 2020"
-                    endDate="July 2022"
-                    workDescriptionOne="After deciding to quit my studies, corona was starting to gain traction in europe and with the situation being unpredictable I decided to join the military for my voluntary service."
-                    workDescriptionTwo="I worked in the medical service in a doctor's office for soldiers. My main tasks where organizing and communicating with patients while also ensuring the doctors could work without any hinderance."
-                    workDescriptionThree="Of course I learned a huge amount and matured a lot like you would expect from 2 years serving in the military. This was also the time when I started coding for fun in my free time and found my passion for web development and decided to pursue a career in software development."
-                />
-
-                <WorkExample
-                    v-if="state[2].status"
-                    jobTitle="Student"
-                    company="Martin Luther University"
-                    startDate="October 2018"
-                    endDate="September 2020"
-                    workDescriptionOne="After completing my Abitur in 2018, I decided to start studying to be a teacher for Math and English in Halle."
-                    workDescriptionTwo="I learned a lot while in university like organizing my work and being independent while also greatly increasing my communication and team skills."
-                    workDescriptionThree="Unfortunatly I had to realize that teaching was not the path I intend to tread for life."
-                />
+                <template v-for="example in workExample">
+                    <div v-if="example.status">
+                        <WorkExample
+                            :jobTitle="(example.jobTitle as string)"
+                            :company="(example.company as string)"
+                            :startDate="(example.startDate as string)"
+                            :endDate="(example.endDate as string)"
+                            :workDescriptionOne="(example.workDescriptionOne as string)"
+                            :workDescriptionTwo="(example.workDescriptionTwo as string)"
+                            :workDescriptionThree="(example.workDescriptionThree as string)"
+                        />
+                    </div>
+                </template>
             </div>
         </div>
         <Socials />
@@ -89,7 +99,6 @@ function setState(index: number) {
 </template>
 
 <style lang="scss">
-
 .app-work {
     width: 50vw;
     margin-top: 20vh;
