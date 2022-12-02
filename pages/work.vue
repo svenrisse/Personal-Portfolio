@@ -13,6 +13,7 @@ const workExample = ref([
         workDescriptionTwo:
             "What I learned so far includes: Shopify, Vue, Nuxt",
         workDescriptionThree: "",
+        buttonText: "Händlerbund",
     },
     {
         status: false,
@@ -26,6 +27,7 @@ const workExample = ref([
             "I worked in the medical service in a doctor's office for soldiers. My main tasks where organizing and communicating with patients while also ensuring the doctors could work without any hinderance.",
         workDescriptionThree:
             "Of course I learned a huge amount and matured a lot like you would expect from 2 years serving in the military. This was also the time when I started coding for fun in my free time and found my passion for web development and decided to pursue a career in software development.",
+        buttonText: "Military Service",
     },
     {
         status: false,
@@ -39,6 +41,7 @@ const workExample = ref([
             "I learned a lot while in university like organizing my work and being independent while also greatly increasing my communication and team skills.",
         workDescriptionThree:
             "Unfortunatly I had to realize that teaching was not the path I intend to tread for life.",
+        buttonText: "Studies",
     },
 ]);
 
@@ -57,24 +60,14 @@ function setworkExample(index: number) {
         <div class="app-work">
             <h1 class="work-header">My Career</h1>
             <div class="work-main">
+                
                 <div class="work-buttons">
                     <button
-                        :class="{ active: workExample[0].status }"
-                        @click="setworkExample(0)"
+                        v-for="example in workExample"
+                        :class="{ active: example.status }"
+                        @click="setworkExample(workExample.indexOf(example))"
                     >
-                        Händlerbund
-                    </button>
-                    <button
-                        :class="{ active: workExample[1].status }"
-                        @click="setworkExample(1)"
-                    >
-                        Military service
-                    </button>
-                    <button
-                        :class="{ active: workExample[2].status }"
-                        @click="setworkExample(2)"
-                    >
-                        Studies
+                        {{ example.buttonText }}
                     </button>
                 </div>
 
