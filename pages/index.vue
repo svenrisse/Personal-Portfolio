@@ -25,7 +25,7 @@
     margin-top: 25vh;
 }
 .intro-greeting {
-    font-size: 24px;
+    font-size: 1.25rem;
     color: var(--light-slate);
 }
 
@@ -33,7 +33,7 @@
     max-width: fit-content;
     margin-top: 2vh;
     margin-bottom: 2vh;
-    font-size: 70px;
+    font-size: 2.5rem;
     color: var(--vue-green);
     border-right: 3px solid var(--vue-green);
     white-space: nowrap;
@@ -43,7 +43,7 @@
 }
 
 .intro-description {
-    font-size: 70px;
+    font-size: 2.5rem;
 }
 
 #intro-description__job {
@@ -51,7 +51,7 @@
 }
 
 .intro-paragraph {
-    font-size: 30px;
+    font-size: 1.5rem;
     color: var(--lightest-slate);
 }
 
@@ -71,4 +71,42 @@
         border-right-color: transparent;
     }
 }
+
+@media screen and (min-width: 640px){
+    .app-index {
+        margin-top: 18vh;
+    }
+    .intro-greeting {
+        font-size: 2rem;
+    }
+    .intro-name {
+        font-size: 4.25rem;
+    }
+    .intro-description {
+        font-size: 4rem;
+    }
+    .intro-paragraph {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 2000px){
+    .app-index {
+        margin-top: 30vh;
+    }
+    .intro-greeting {
+        font-size: 2.5rem;
+    }
+    .intro-name {
+        font-size: 5rem;
+    }
+    .intro-description {
+        font-size: 5rem;
+    }
+    .intro-paragraph {
+    font-size: 2.5rem;
+    }
+}
+
+
 </style>
