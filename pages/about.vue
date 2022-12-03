@@ -20,7 +20,7 @@
                 <span class="about-green"> Fullstack Development </span> and am
                 currently in training at
                 <span class="about-green"> Händlerbund </span> and
-                <span class="about-green"> YAY! Digital </span>.
+                <span class="about-green"> YAY! Digital</span>.
             </p>
             <p id="about-3">
                 Most of my free time is spent
@@ -28,7 +28,7 @@
                 fantasy novels, <span class="about-green"> cooking </span> and
                 <span class="about-green"> powerlifting </span> when not
                 currently writing code and working on
-                <span class="about-green"> side projects </span>.
+                <span class="about-green"> side projects</span>.
             </p>
 
             <div class="app-about__tech" id="about-4">
