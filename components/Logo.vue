@@ -9,8 +9,18 @@
     }
 </script>
 
-<style>
-    img {
-        cursor: pointer;
+<style lang="scss">
+    .logo {
+    position: absolute;
+    left: 0;
+    margin-left: -5vw;
+    margin-top: -2vh;
+    height: 20vh;
+    border-radius: 100px;
+    cursor: pointer;
+
+    @media screen and (min-width: 1024px) {
+        margin-left: 0;
     }
+}
 </style>
