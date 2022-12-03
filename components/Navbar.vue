@@ -9,8 +9,9 @@
 
 <style lang="scss">
 .navbar {
-    position: fixed;
-    right: 4vw;
+    position: absolute;
+    margin-top: 5vh;
+    right: 1vw;
     font-family: var(--font-mono);
 }
 
@@ -53,5 +54,12 @@
     -ms-animation: fadein 5s; /* Internet Explorer */
     -o-animation: fadein 5s; /* Opera < 12.1 */
     animation: fadein 5s;
+}
+
+@media screen and (min-width: 1280px) {
+    .navbar {
+        position: fixed;
+        right: 4vw;
+    }
 }
 </style>
