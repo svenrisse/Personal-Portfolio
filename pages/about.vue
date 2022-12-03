@@ -122,10 +122,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10vh;
+    margin-top: 20vh;
 
     p {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
     #about-header {
         font-family: var(--font-mono);
@@ -211,5 +211,11 @@
 #logo-about {
     height: 15vh;
     cursor: default;
+}
+
+@media screen and (min-width: 640px) {
+    .app-about {
+
+    }
 }
 </style>
