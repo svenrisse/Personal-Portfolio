@@ -21,6 +21,7 @@
 
     @media screen and (min-width: 1024px) {
         margin-left: 0;
+        position: fixed;
     }
 }
 </style>
