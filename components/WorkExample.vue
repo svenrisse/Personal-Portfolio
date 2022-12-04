@@ -50,6 +50,7 @@ const props = defineProps<{
     p {
         font-size: 1.5rem;
         max-width: 40vw;
+        text-align: justify;
     }
 }
 </style>

@@ -121,6 +121,7 @@
     width: 50vw;
     display: flex;
     flex-direction: column;
+    text-align: justify;
     align-items: center;
     margin-top: 20vh;
 
