@@ -5,12 +5,17 @@
         <div class="app-index">
             <span class="intro-greeting">Hi, my name is </span>
             <h1 class="intro-name">Sven Risse.</h1>
-            <h1 class="intro-description">I'm an aspiring  <span id="intro-description__job"> fullstack web developer</span>.</h1>
+            <h1 class="intro-description">
+                I'm an aspiring
+                <span id="intro-description__job"> fullstack web developer</span
+                >.
+            </h1>
             <p class="intro-paragraph">
                 I'm a software engineer, with a passion for new and exiting
                 technologies and frameworks. <br />
                 Currently, I'm focused on diving deep into Frontend Development
-                with Vue and Nuxt, and taking first steps into the Backend with Node.js.
+                with Vue and Nuxt, and taking first steps into the Backend with
+                Node.js.
             </p>
         </div>
         <Socials />
@@ -19,10 +24,10 @@
 </template>
 
 <style lang="scss">
-
 .app-index {
-    width: 50vw;
+    width: 65vw;
     margin-top: 25vh;
+    margin-left: 5vw;
 }
 .intro-greeting {
     font-size: 1.25rem;
@@ -43,7 +48,7 @@
 }
 
 .intro-description {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
 }
 
 #intro-description__job {
@@ -51,8 +56,9 @@
 }
 
 .intro-paragraph {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: var(--lightest-slate);
+    text-align: justify;
 }
 
 @keyframes typewriter {
@@ -72,7 +78,7 @@
     }
 }
 
-@media screen and (min-width: 640px){
+@media screen and (min-width: 640px) {
     .app-index {
         margin-top: 18vh;
     }
@@ -86,11 +92,17 @@
         font-size: 4rem;
     }
     .intro-paragraph {
-        font-size: 2rem;
+        font-size: 2.25rem;
     }
 }
 
-@media screen and (min-width: 2000px){
+@media screen and (min-width: 1500px) {
+    .app-index {
+        width: 50vw;
+    }
+}
+
+@media screen and (min-width: 2000px) {
     .app-index {
         margin-top: 30vh;
     }
@@ -104,9 +116,7 @@
         font-size: 5rem;
     }
     .intro-paragraph {
-    font-size: 2.5rem;
+        font-size: 2.5rem;
     }
 }
-
-
 </style>
