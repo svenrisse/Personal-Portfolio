@@ -58,7 +58,6 @@
 .intro-paragraph {
     font-size: 1.25rem;
     color: var(--lightest-slate);
-    text-align: justify;
 }
 
 @keyframes typewriter {
@@ -93,6 +92,12 @@
     }
     .intro-paragraph {
         font-size: 2.25rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .intro-paragraph {
+        text-align: justify;
     }
 }
 
