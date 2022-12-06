@@ -66,9 +66,13 @@ const projects = ref([
 .projects-header {
     text-align: center;
     font-family: var(--font-mono);
+    font-size: 1.5rem;
+    @media screen and (min-width: 640px) {
+        font-size: 2rem;
+    }
 }
 .app-projects {
-    margin-top: 20vh;
+    margin-top: 15vh;
     width: 50vw;
 }
 </style>

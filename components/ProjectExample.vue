@@ -33,10 +33,12 @@ defineProps<{
 <style lang="scss">
 .project-example {
     display: flex;
-    margin-bottom: 7.5vh;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 15vh;
     img {
-        height: 30vh;
-        width: 27.5vw;
+        height: 25vh;
+        width: 75vw;
         border: 1px solid var(--vue-green);
         border-radius: 10px;
         display: inline-block;
@@ -69,27 +71,98 @@ defineProps<{
         margin-left: 2vw;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
-
+        align-items: center;
         h1 {
+            width: 80vw;
             margin-top: 0;
             margin-bottom: 0;
             color: var(--vue-green);
+            text-align: center;
         }
 
         p {
-            width: 20vw;
+            width: 50vw;
             margin-left: -5vw;
             background-color: var(--lightest-navy);
             border-radius: 10px;
             padding: 3vh;
-            font-size: 1.25rem;
+            font-size: 1rem;
             z-index: 1;
             box-shadow: 0 10px 30px -15px var(--navy-shadow);
         }
 
         span {
             font-family: var(--font-mono);
+        }
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .project-example {
+        margin-left: -4vw;
+        flex-direction: row;
+        margin-bottom: 7.5vw;
+        img {
+            margin-left: -10vw;
+            width: 50vw;
+            height: 35vw;
+        }
+        .project-text {
+            align-items: flex-start;
+
+            h1 {
+                width: 40vw;
+                text-align: left;
+            }
+            p {
+                margin-left: -5vw;
+                width: 30vw;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .project-example {
+        margin-left: 0;
+        img {
+            margin-left: 0;
+            width: 30vw;
+            height: 20vw;
+        }
+        .project-text {
+            margin-left: -10vw;
+            align-items: flex-end;
+            h1 {
+                text-align: end;
+            }
+            p {
+                margin-left: -5vw;
+                width: 30vw;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .project-example {
+        margin-top: 3vw;
+        margin-bottom: 5vh;
+        img {
+            width: 30vw;
+            height: 19vw;
+        }
+        .project-text {
+            margin-left: -10vw;
+            align-items: flex-end;
+            h1 {
+                width: 30vw;
+                text-align: end;
+            }
+            p {
+                width: 20vw;
+                font-size: 1.4rem;
+            }
         }
     }
 }
