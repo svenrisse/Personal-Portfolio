@@ -118,10 +118,10 @@
 
 <style lang="scss">
 .app-about {
-    width: 50vw;
+    margin-left: 5vw;
+    width: 65vw;
     display: flex;
     flex-direction: column;
-    text-align: justify;
     align-items: center;
     margin-top: 20vh;
 
@@ -172,6 +172,8 @@
         align-items: center;
 
         .header {
+            text-align: center;
+            width: 70vw;
             font-size: 2rem;
             font-family: var(--font-mono);
             margin-top: 2vh;
@@ -180,7 +182,7 @@
 
         .icons {
             .tech-icon {
-                margin-left: 1.5vw;
+                margin-left: 2vw;
                 display: inline-block;
                 vertical-align: middle;
                 -webkit-transform: perspective(1px) translateZ(0);
@@ -216,7 +218,19 @@
 
 @media screen and (min-width: 640px) {
     .app-about {
+        p {
+            font-size: 1.75rem;
+        }
+    }
+}
 
+@media screen and (min-width: 1000px) {
+    .app-about {
+        margin-top: 10vh;
+        p {
+            text-align: justify;
+            font-size: 2rem;
+        }
     }
 }
 </style>
