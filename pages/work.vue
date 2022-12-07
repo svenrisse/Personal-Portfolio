@@ -71,7 +71,7 @@ function setworkExample(index: number) {
                 </div>
 
                 <template v-for="example in workExample">
-                    <div v-if="example.status">
+                    <div v-if="example.status" class="work-text">
                         <WorkExample
                             :jobTitle="(example.jobTitle as string)"
                             :company="(example.company as string)"
@@ -96,6 +96,7 @@ function setworkExample(index: number) {
     margin-top: 20vh;
 }
 .work-header {
+    width: max-content;
     text-align: center;
     margin-bottom: 5vh;
     font-size: 2.5rem;
@@ -104,18 +105,21 @@ function setworkExample(index: number) {
 
 .work-main {
     display: flex;
-
     .work-buttons {
+        position:absolute;
+        left: 0;
+        top: 40vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        min-width: 10vw;
+        min-width: 5vw;
+        margin-right: 10vw;
         button {
             height: 7vh;
             background-color: var(--navy);
             border: 0;
             color: var(--white);
-            font-size: 1.5rem;
+            font-size: 0.9rem;
             cursor: pointer;
             border-radius: 10px;
             &:hover {
@@ -126,6 +130,9 @@ function setworkExample(index: number) {
         .active {
             color: var(--vue-green);
         }
+    }
+    .work-text {
+        margin-left: 5vw;
     }
 }
 </style>
