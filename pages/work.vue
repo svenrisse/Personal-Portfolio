@@ -111,6 +111,8 @@ function setworkExample(index: number) {
 
 .work-main {
     display: flex;
+    height: fit-content;
+    width: fit-content;
     .work-buttons {
         position:absolute;
         left: 4vw;
@@ -120,12 +122,14 @@ function setworkExample(index: number) {
         justify-content: center;
         min-width: 5vw;
         margin-right: 10vw;
+        border-right: 0.1rem solid var(--vue-green);
+        padding-right: 3vw;
         button {
             height: 7vh;
             background-color: var(--navy);
             border: 0;
             color: var(--white);
-            font-size: 0.9rem;
+            font-size: 0.75rem;
             cursor: pointer;
             border-radius: 10px;
             &:hover {
@@ -148,6 +152,14 @@ function setworkExample(index: number) {
             top: 35vh;
             button {
                 font-size: 1.5rem;
+                height: 10vh;
+            }
+        }
+        @media screen and (min-width: 1500px) {
+            left: 15vw;
+            top: 35vh;
+            button {
+                font-size: 2rem;
                 height: 10vh;
             }
         }

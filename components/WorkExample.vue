@@ -55,7 +55,7 @@ const props = defineProps<{
     }
 
     @media screen and (min-width: 640px) {
-        margin-left: 0;
+        margin-left: 3vw;
         h2 {
             flex-direction: row;
             gap: 1vw;
@@ -71,19 +71,25 @@ const props = defineProps<{
         }
     }
     @media screen and (min-width: 1000px) {
-        margin-left: 0;
-        h2 {
-            flex-direction: row;
-            gap: 1vw;
-            font-size: 1.5rem;
-            max-width: max-content;
-        }
         .work-dates {
             font-size: 1.25rem;
         }
 
         p {
             font-size: 1.5rem;
+        }
+    }
+    @media screen and (min-width: 1500px) {
+        h2 {
+            font-size: 2.5rem;
+            gap: 0.5vw;
+        }
+        .work-dates {
+            font-size: 1.75rem;
+        }
+
+        p {
+            font-size: 2rem;
         }
     }
 }
