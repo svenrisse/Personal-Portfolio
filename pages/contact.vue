@@ -4,14 +4,16 @@
         <Navbar />
         <div class="app-contact">
             <h1 class="contact-header">Contact</h1>
-            <p class="contact-content">
+            <div class="contact-content">
+                <p>
                 As I am currently in training, I'm not actively looking for new
                 opportunities, but nevertheless feel free to contact me anytime
-                on my socials or my mail,
+                on my socials or my mail:
+                </p>
                 <a href="mailto:sven@srisse.dev" id="contact-mail"
                     >sven@srisse.dev</a
                 >
-            </p>
+            </div>
         </div>
         <Socials />
         <Mail />
@@ -20,7 +22,7 @@
 
 <style lang="scss">
 .app-contact {
-    width: 50vw;
+    width: 60vw;
     margin-top: 30vh;
 }
 .contact-header {
@@ -30,12 +32,17 @@
 }
 
 .contact-content {
-    font-size: 2rem;
+    text-align: center;
+    font-size: 1.25rem;
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 3s; /* Firefox < 16 */
     -ms-animation: fadein 3s; /* Internet Explorer */
     -o-animation: fadein 3s; /* Opera < 12.1 */
     animation: fadein 3s;
+
+    @media screen and (min-width: 640px) {
+        font-size: 1.75rem;
+    }
 }
 
 #contact-mail {
