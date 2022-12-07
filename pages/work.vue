@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 const workExample = ref([
     {
         status: true,
@@ -10,7 +9,7 @@ const workExample = ref([
         workDescriptionOne:
             "Im currently in training to be a web developer at Händlerbund in cooperation with YAY! Digital.",
         workDescriptionTwo:
-            "What I learned so far includes: Shopify, Vue, Nuxt",
+            "I've learned a remarkable amount so far including, JavaScript Frameworks, different ways to write CSS and how to better incorperating design in projects.",
         workDescriptionThree: "",
         buttonText: "Händlerbund",
     },
@@ -35,9 +34,9 @@ const workExample = ref([
         startDate: "October 2018",
         endDate: "September 2020",
         workDescriptionOne:
-            "After completing my Abitur in 2018, I decided to start studying to be a teacher for Math and English in Halle.",
+            "After completing my A-Levels in 2018, I decided to start studying to be a teacher for Math and English in Halle.",
         workDescriptionTwo:
-            "I learned a lot while in university like organizing my work and being independent while also greatly increasing my communication and team skills.",
+            "I learned a lot while in university like organizing my work and being independent while also greatly increasing my communication and team skills. Of course my proficiency in english increased tremendously as well.",
         workDescriptionThree:
             "Unfortunatly I had to realize that teaching was not the path I intend to tread for life.",
         buttonText: "Studies",
@@ -59,7 +58,6 @@ function setworkExample(index: number) {
         <div class="app-work">
             <h1 class="work-header">My Career</h1>
             <div class="work-main">
-                
                 <div class="work-buttons">
                     <button
                         v-for="example in workExample"
@@ -114,7 +112,7 @@ function setworkExample(index: number) {
     height: fit-content;
     width: fit-content;
     .work-buttons {
-        position:absolute;
+        position: absolute;
         left: 4vw;
         top: 35vh;
         display: flex;
