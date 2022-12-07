@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from "vue";
+
 const projects = ref([
     {
         imageLink: "nuxt-portfolio.png",
