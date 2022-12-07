@@ -124,9 +124,19 @@
     flex-direction: column;
     align-items: center;
     margin-top: 20vh;
-
+    margin-bottom: 7.5vh;
+    @media screen and (min-width: 640px) {
+        margin-top: 10vh;
+        height: 50vh;
+    }
     p {
         font-size: 1.25rem;
+        @media screen and (min-width: 640px) {
+            font-size: 1.5rem;
+        }
+        @media screen and (min-width: 1500px) {
+            font-size: 2rem;
+        }
     }
     #about-header {
         font-family: var(--font-mono);
@@ -181,7 +191,6 @@
         }
 
         .icons {
-            margin-bottom: 7.5vh;
             .tech-icon {
                 margin-left: 2vw;
                 display: inline-block;
@@ -217,21 +226,4 @@
     cursor: default;
 }
 
-@media screen and (min-width: 640px) {
-    .app-about {
-        p {
-            font-size: 1.75rem;
-        }
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    .app-about {
-        margin-top: 10vh;
-        p {
-            text-align: justify;
-            font-size: 2rem;
-        }
-    }
-}
 </style>
