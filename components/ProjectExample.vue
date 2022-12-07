@@ -149,8 +149,8 @@ defineProps<{
         margin-top: 3vw;
         margin-bottom: 5vh;
         img {
-            width: 30vw;
-            height: 19vw;
+            height: 30vh;
+            width: 25vw;
         }
         .project-text {
             margin-left: -10vw;
