@@ -1,19 +1,20 @@
 <script setup lang="ts">
 const props = defineProps<{
-    jobTitle: String;
-    company: String;
-    startDate: String;
-    endDate: String;
-    workDescriptionOne: String;
-    workDescriptionTwo?: String;
-    workDescriptionThree?: String;
+    jobTitle: string;
+    company: string;
+    companyLink: string;
+    startDate: string;
+    endDate: string;
+    workDescriptionOne: string;
+    workDescriptionTwo?: string;
+    workDescriptionThree?: string;
 }>();
 </script>
 
 <template>
     <div class="work-example">
         <h2>
-            <span>{{ jobTitle }} @ </span> <span class="work-company"> {{ company }}</span>
+            <span>{{ jobTitle }} @ </span> <span class="work-company"><a :href="companyLink">{{ company }}</a></span>
         </h2>
         <span class="work-dates"> {{ startDate }} - {{ endDate }} </span>
         <p>{{ workDescriptionOne }}</p>
@@ -44,6 +45,9 @@ const props = defineProps<{
     .work-company {
         color: var(--vue-green);
         font-family: var(--font-mono);
+        a {
+            color: var(--vue-green);
+        }
     }
     .work-dates {
         font-size: 0.8em;

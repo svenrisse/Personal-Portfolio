@@ -4,6 +4,7 @@ const workExample = ref([
         status: true,
         jobTitle: "Web Developer",
         company: "Händlerbund",
+        companyLink: "https://www.haendlerbund.de/en",
         startDate: "September 2022",
         endDate: "Present",
         workDescriptionOne:
@@ -17,6 +18,7 @@ const workExample = ref([
         status: false,
         jobTitle: "Soldier",
         company: "Bundeswehr",
+        companyLink: "https://www.bundeswehr.de/en/",
         startDate: "October 2020",
         endDate: "July 2022",
         workDescriptionOne:
@@ -31,6 +33,7 @@ const workExample = ref([
         status: false,
         jobTitle: "Student",
         company: "Martin Luther University",
+        companyLink: "https://www.uni-halle.de/?lang=en",
         startDate: "October 2018",
         endDate: "September 2020",
         workDescriptionOne:
@@ -73,6 +76,7 @@ function setworkExample(index: number) {
                         <WorkExample
                             :jobTitle="(example.jobTitle as string)"
                             :company="(example.company as string)"
+                            :companyLink="(example.companyLink)"
                             :startDate="(example.startDate as string)"
                             :endDate="(example.endDate as string)"
                             :workDescriptionOne="(example.workDescriptionOne as string)"
