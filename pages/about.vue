@@ -181,6 +181,7 @@
         }
 
         .icons {
+            margin-bottom: 7.5vh;
             .tech-icon {
                 margin-left: 2vw;
                 display: inline-block;
