@@ -114,7 +114,7 @@ function setworkExample(index: number) {
     .work-buttons {
         position:absolute;
         left: 4vw;
-        top: 40vh;
+        top: 35vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
