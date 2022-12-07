@@ -94,6 +94,8 @@ function setworkExample(index: number) {
 .app-work {
     width: 50vw;
     margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
 }
 .work-header {
     width: max-content;
@@ -101,13 +103,17 @@ function setworkExample(index: number) {
     margin-bottom: 5vh;
     font-size: 2.5rem;
     font-family: var(--font-mono);
+
+    @media screen and (min-width: 640px) {
+        align-self: center;
+    }
 }
 
 .work-main {
     display: flex;
     .work-buttons {
         position:absolute;
-        left: 0;
+        left: 4vw;
         top: 40vh;
         display: flex;
         flex-direction: column;
@@ -129,6 +135,21 @@ function setworkExample(index: number) {
         }
         .active {
             color: var(--vue-green);
+        }
+        @media screen and (min-width: 640px) {
+            left: 5vw;
+            top: 35vh;
+            button {
+                font-size: 1.25rem;
+            }
+        }
+        @media screen and (min-width: 1000px) {
+            left: 12.5vw;
+            top: 35vh;
+            button {
+                font-size: 1.5rem;
+                height: 10vh;
+            }
         }
     }
     .work-text {
