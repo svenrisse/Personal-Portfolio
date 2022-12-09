@@ -35,39 +35,12 @@
                 <span class="header">My Tech Stack</span>
                 <div class="icons">
                     <a
-                        href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5?retiredLocale=de"
+                        href="https://tailwindcss.com/"
                         class="tech-icon"
-                        title="HTML5"
+                        title="TailwindCSS"
                     >
                         <Icon
-                            name="vscode-icons:file-type-html"
-                            size="3.5rem"
-                        />
-                    </a>
-                    <a
-                        href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-                        class="tech-icon"
-                        title="CSS3"
-                    >
-                        <Icon name="vscode-icons:file-type-css" size="3.5rem" />
-                    </a>
-                    <a
-                        href="https://sass-lang.com/"
-                        class="tech-icon"
-                        title="SCSS"
-                    >
-                        <Icon
-                            name="vscode-icons:file-type-sass"
-                            size="3.5rem"
-                        />
-                    </a>
-                    <a
-                        href="https://www.javascript.com/"
-                        class="tech-icon"
-                        title="JavaScript"
-                    >
-                        <Icon
-                            name="vscode-icons:file-type-js-official"
+                            name="vscode-icons:file-type-tailwind"
                             size="3.5rem"
                         />
                     </a>
@@ -92,6 +65,16 @@
                         />
                     </a>
                     <a
+                        href="https://nextjs.org/"
+                        class="tech-icon"
+                        title="Next.js"
+                    >
+                        <Icon
+                            name="vscode-icons:file-type-next"
+                            size="3.5rem"
+                        />
+                    </a>
+                    <a
                         href="https://vuejs.org/"
                         class="tech-icon"
                         title="Vue.js"
@@ -105,6 +88,16 @@
                     >
                         <Icon
                             name="vscode-icons:file-type-nuxt"
+                            size="3.5rem"
+                        />
+                    </a>
+                    <a
+                        href="https://nodejs.org/en/"
+                        class="tech-icon"
+                        title="Node.js"
+                    >
+                        <Icon
+                            name="vscode-icons:file-type-node"
                             size="3.5rem"
                         />
                     </a>
