@@ -89,7 +89,7 @@ const otherTech = [
             </p>
 
             <div class="app-about__tech" id="about-4">
-                <span class="header">My Tech Stack</span>
+                <span class="header">Tech I'm passionate about</span>
                 <div class="icons">
                     <a
                         v-for="tech in exitingTech"
@@ -190,7 +190,7 @@ const otherTech = [
         .header {
             text-align: center;
             width: 70vw;
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-family: var(--font-mono);
             margin-top: 2vh;
             margin-bottom: 2vh;
