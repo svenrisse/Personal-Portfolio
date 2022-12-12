@@ -1,3 +1,60 @@
+<script setup lang="ts">
+const exitingTech = [
+    {
+        link: "https://tailwindcss.com/",
+        title: "TailwindCSS",
+        iconName: "vscode-icons:file-type-tailwind",
+    },
+    {
+        link: "https://www.typescriptlang.org/",
+        title: "TypeScript",
+        iconName: "vscode-icons:file-type-typescript-official",
+    },
+    {
+        link: "https://reactjs.org/",
+        title: "React.js",
+        iconName: "vscode-icons:file-type-reactjs",
+    },
+    {
+        link: "https://nextjs.org/",
+        title: "Next.js",
+        iconName: "vscode-icons:file-type-next",
+    },
+    {
+        link: "https://www.prisma.io/",
+        title: "Prisma",
+        iconName: "vscode-icons:file-type-prisma",
+    },
+    {
+        link: "https://trpc.io/",
+        title: "tRPC",
+        iconName: "logos:trpc",
+    },
+    {
+        link: "https://nodejs.org/en/",
+        title: "Node.js",
+        iconName: "vscode-icons:file-type-node",
+    },
+];
+const otherTech = [
+    {
+        link: "https://vuejs.org/",
+        title: "Vue.js",
+        iconName: "vscode-icons:file-type-vue",
+    },
+    {
+        link: "https://nuxtjs.org/",
+        title: "Nuxt.js",
+        iconName: "vscode-icons:file-type-nuxt",
+    },
+    {
+        link: "https://sass-lang.com/",
+        title: "SCSS",
+        iconName: "vscode-icons:file-type-scss",
+    },
+];
+</script>
+
 <template>
     <div class="app">
         <Logo />
@@ -35,71 +92,25 @@
                 <span class="header">My Tech Stack</span>
                 <div class="icons">
                     <a
-                        href="https://tailwindcss.com/"
+                        v-for="tech in exitingTech"
+                        :href="tech.link"
                         class="tech-icon"
-                        title="TailwindCSS"
+                        :title="tech.title"
                     >
-                        <Icon
-                            name="vscode-icons:file-type-tailwind"
-                            size="3.5rem"
-                        />
+                        <Icon :name="tech.iconName" size="3.5rem" />
                     </a>
+                </div>
+            </div>
+            <div class="app-about__tech" id="about-4">
+                <span class="header">Other Tech I've worked with</span>
+                <div class="icons">
                     <a
-                        href="https://www.typescriptlang.org/"
+                        v-for="tech in otherTech"
+                        :href="tech.link"
                         class="tech-icon"
-                        title="TypeScript"
+                        :title="tech.title"
                     >
-                        <Icon
-                            name="vscode-icons:file-type-typescript-official"
-                            size="3.5rem"
-                        />
-                    </a>
-                    <a
-                        href="https://reactjs.org/"
-                        class="tech-icon"
-                        title="React.js"
-                    >
-                        <Icon
-                            name="vscode-icons:file-type-reactjs"
-                            size="3.5rem"
-                        />
-                    </a>
-                    <a
-                        href="https://nextjs.org/"
-                        class="tech-icon"
-                        title="Next.js"
-                    >
-                        <Icon
-                            name="vscode-icons:file-type-next"
-                            size="3.5rem"
-                        />
-                    </a>
-                    <a
-                        href="https://vuejs.org/"
-                        class="tech-icon"
-                        title="Vue.js"
-                    >
-                        <Icon name="vscode-icons:file-type-vue" size="3.5rem" />
-                    </a>
-                    <a
-                        href="https://nuxtjs.org/"
-                        class="tech-icon"
-                        title="Nuxt.js"
-                    >
-                        <Icon
-                            name="vscode-icons:file-type-nuxt"
-                            size="3.5rem"
-                        />
-                    </a>
-                    <a
-                        href="https://nodejs.org/en/"
-                        class="tech-icon"
-                        title="Node.js"
-                    >
-                        <Icon
-                            name="vscode-icons:file-type-node"
-                            size="3.5rem"
-                        />
+                        <Icon :name="tech.iconName" size="3.5rem" />
                     </a>
                 </div>
             </div>
@@ -218,5 +229,4 @@
     height: 15vh;
     cursor: default;
 }
-
 </style>
