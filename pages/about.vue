@@ -134,6 +134,8 @@ const otherTech = [
         height: 50vh;
     }
     p {
+        margin-top: 0;
+        margin-bottom: 2vh;
         font-size: 1.25rem;
         @media screen and (min-width: 640px) {
             font-size: 1.5rem;
