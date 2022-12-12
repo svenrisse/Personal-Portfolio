@@ -76,7 +76,7 @@ function setworkExample(index: number) {
                         <WorkExample
                             :jobTitle="(example.jobTitle as string)"
                             :company="(example.company as string)"
-                            :companyLink="(example.companyLink)"
+                            :companyLink="example.companyLink"
                             :startDate="(example.startDate as string)"
                             :endDate="(example.endDate as string)"
                             :workDescriptionOne="(example.workDescriptionOne as string)"
@@ -125,7 +125,7 @@ function setworkExample(index: number) {
         min-width: 5vw;
         margin-right: 10vw;
         border-right: 0.1rem solid var(--vue-green);
-        padding-right: 3vw;
+        padding-right: 1.5vw;
         button {
             height: 7vh;
             background-color: var(--navy);
