@@ -6,13 +6,10 @@
             <h1 class="contact-header">Contact</h1>
             <div class="contact-content">
                 <p>
-                As I am currently in training, I'm not actively looking for new
-                opportunities, but nevertheless feel free to contact me anytime
-                on my socials or my mail:
+                    As I am currently in training, I'm not actively looking for new opportunities, but nevertheless feel
+                    free to contact me anytime on my socials or my mail:
                 </p>
-                <a href="mailto:sven@srisse.dev" id="contact-mail"
-                    >sven@srisse.dev</a
-                >
+                <a href="mailto:sven@srisse.dev" id="contact-mail">sven@svenrisse.dev</a>
             </div>
         </div>
         <Socials />

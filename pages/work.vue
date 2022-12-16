@@ -7,8 +7,7 @@ const workExample = ref([
         companyLink: "https://www.haendlerbund.de/en",
         startDate: "September 2022",
         endDate: "Present",
-        workDescriptionOne:
-            "Im currently in training to be a web developer at Händlerbund in cooperation with YAY! Digital.",
+        workDescriptionOne: "Im currently in training to be a web developer at Händlerbund.",
         workDescriptionTwo:
             "I've learned a remarkable amount so far including, JavaScript Frameworks, different ways to write CSS and how to better incorperating design in projects.",
         workDescriptionThree: "",

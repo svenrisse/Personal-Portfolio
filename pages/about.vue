@@ -64,39 +64,27 @@ const otherTech = [
             <img src="/img/logo-without_text.png" alt="Logo" id="logo-about" />
             <h1 id="about-header">About Me</h1>
             <p id="about-1">
-                Hello! My name is Sven and I'm passionately creating things on
-                the internet. My journey in
-                <span class="about-green">Web Development</span> started in 2021
-                when I started learning the basics of
-                <span class="about-green">HTML</span>,
-                <span class="about-green">CSS</span> and
+                Hello! My name is Sven and I'm passionately creating things on the internet. My journey in
+                <span class="about-green">Web Development</span> started in 2021 when I started learning the basics of
+                <span class="about-green">HTML</span>, <span class="about-green">CSS</span> and
                 <span class="about-green">JavaScript</span>.
             </p>
             <p id="about-2">
                 Fast-forward to today and I've decided to pursue a career in
-                <span class="about-green"> Fullstack Development </span> and am
-                currently in training at
-                <span class="about-green"> Händlerbund </span> and
-                <span class="about-green"> YAY! Digital</span>.
+                <span class="about-green"> Fullstack Development </span> and am currently in training at
+                <span class="about-green"> Händlerbund </span>.
             </p>
             <p id="about-3">
                 Most of my free time is spent
-                <span class="about-green"> reading </span> science fiction and
-                fantasy novels, <span class="about-green"> cooking </span> and
-                <span class="about-green"> powerlifting </span> when not
-                currently writing code and working on
-                <span class="about-green"> side projects</span>.
+                <span class="about-green"> reading </span> science fiction and fantasy novels,
+                <span class="about-green"> cooking </span> and <span class="about-green"> powerlifting </span> when not
+                currently writing code and working on <span class="about-green"> side projects</span>.
             </p>
 
             <div class="app-about__tech" id="about-4">
                 <span class="header">Tech I'm passionate about</span>
                 <div class="icons">
-                    <a
-                        v-for="tech in exitingTech"
-                        :href="tech.link"
-                        class="tech-icon"
-                        :title="tech.title"
-                    >
+                    <a v-for="tech in exitingTech" :href="tech.link" class="tech-icon" :title="tech.title">
                         <Icon :name="tech.iconName" size="3.5rem" />
                     </a>
                 </div>
@@ -104,12 +92,7 @@ const otherTech = [
             <div class="app-about__tech" id="about-4">
                 <span class="header">Other Tech I've worked with</span>
                 <div class="icons">
-                    <a
-                        v-for="tech in otherTech"
-                        :href="tech.link"
-                        class="tech-icon"
-                        :title="tech.title"
-                    >
+                    <a v-for="tech in otherTech" :href="tech.link" class="tech-icon" :title="tech.title">
                         <Icon :name="tech.iconName" size="3.5rem" />
                     </a>
                 </div>
