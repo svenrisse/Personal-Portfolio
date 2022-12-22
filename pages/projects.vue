@@ -1,6 +1,13 @@
 <script setup lang="ts">
-
 const projects = ref([
+    {
+        imageLink: "note-app.png",
+        projectLink: "https://note-app-svenrisse.vercel.app/",
+        title: "Note App",
+        description: "Fullstack Note App built without Auth. My first time writing a backend!",
+        technologies: "TypeScript React NextJS tRPC Prisma TailwindCSS",
+        githubLink: "note-app",
+    },
     {
         imageLink: "nuxt-portfolio.png",
         projectLink: "https://www.srisse.dev/",
