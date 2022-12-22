@@ -18,11 +18,7 @@ defineProps<{
             <h1>{{ title }}</h1>
             <p>{{ description }}</p>
             <span> {{ technologies }}</span>
-            <a
-                :href="`https://www.github.com/svenrisse/${githubLink}`"
-                class="socials-icon"
-                title="Github"
-            >
+            <a :href="`https://www.github.com/svenrisse/${githubLink}`" class="socials-icon" title="Github">
                 <br />
                 <Icon name="mdi:github" size="2.5rem" />
             </a>
@@ -162,6 +158,9 @@ defineProps<{
             p {
                 width: 20vw;
                 font-size: 1.4rem;
+            }
+            span {
+                max-width: 17.5vw;
             }
         }
     }
