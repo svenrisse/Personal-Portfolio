@@ -1,6 +1,15 @@
 <script setup lang="ts">
 const projects = ref([
   {
+    imageLink: "twitter-clone.png",
+    projectLink: "https://twitter-clone-pied-mu.vercel.app/",
+    title: "Twitter Clone",
+    description: "Fullstack Twitter Clone built with the T3 Stack.",
+    technologies:
+      "TypeScript React NextJS tRPC Prisma TailwindCSS Next-Auth CockroachDB",
+    githubLink: "Twitter-Clone",
+  },
+  {
     imageLink: "note-app.png",
     projectLink: "https://note-app-svenrisse.vercel.app/",
     title: "Note App",
