@@ -9,6 +9,7 @@ Check it out on:
 
 Tools used:
 
+-   [Typescript](https://www.typescriptlang.org/)
 -   [Vue](https://vuejs.org/)
 -   [Nuxt](https://nuxt.com)
 -   [Vite](https://vitejs.dev/)
