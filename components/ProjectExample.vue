@@ -12,7 +12,7 @@ defineProps<{
 <template>
   <div class="project-example">
     <a :href="`${projectLink}`">
-      <img :src="`/img/${imageLink}`" />
+      <img :src="`/img/${imageLink}`" :alt=`${title} image`/>
     </a>
     <div class="project-text">
       <h1>{{ title }}</h1>
