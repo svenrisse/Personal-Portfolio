@@ -1,5 +1,5 @@
 <template>
-  <img src="/img/logo.png" alt="Logo" class="logo" @click="moveToHome" />
+  <img src="/img/logo.png" alt="Logo Sven Risse" class="logo" @click="moveToHome" />
 </template>
 
 <script setup lang="ts">
