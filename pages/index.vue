@@ -4,7 +4,7 @@
     <Navbar />
     <div class="app-index">
       <span class="intro-greeting">Hi, my name is </span>
-      <h1 class="intro-name">Sven Risse.</h1>
+      <h2 class="intro-name">Sven Risse.</h2>
       <h1 class="intro-description">
         I'm an aspiring
         <span id="intro-description__job"> fullstack web developer</span>.
