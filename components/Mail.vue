@@ -1,5 +1,7 @@
+<script setup lang='ts'>
+</script>
 <template>
-  <a href="mailto:sven@svenrisse.dev" class="mail-link">sven@svenrisse.dev</a>
+  <a href="mailto:contact@svenrisse.com" class="mail-link">sven@svenrisse.dev</a>
 </template>
 
 <style lang="scss">
