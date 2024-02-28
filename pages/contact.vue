@@ -10,8 +10,8 @@
           opportunities, but nevertheless feel free to contact me anytime on my
           socials or my mail:
         </p>
-        <a href="mailto:sven@svenrisse.dev" id="contact-mail"
-          >sven@svenrisse.dev</a
+        <a href="mailto:contact@svenrisse.com" id="contact-mail"
+          >contact@svenrisse.com</a
         >
       </div>
     </div>

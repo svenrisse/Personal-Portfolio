@@ -12,7 +12,7 @@
     <a href="https://www.xing.com/profile/Sven_Risse2/cv" title="Xing">
       <Icon name="mdi:xing" size="2.5rem" class="socials-icon" />
     </a>
-    <a href="mailto:sven@svenrisse.dev" title="Mail">
+    <a href="mailto:contact@svenrisse.com" title="Mail">
       <Icon
         name="material-symbols:mail-rounded"
         size="2.5rem"
