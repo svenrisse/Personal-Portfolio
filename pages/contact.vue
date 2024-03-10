@@ -6,8 +6,8 @@
       <h1 class="contact-header">Contact</h1>
       <div class="contact-content">
         <p>
-          As I am currently in training, I'm not actively looking for new
-          opportunities, but nevertheless feel free to contact me anytime on my
+          I'm actively looking for new
+          opportunities, so feel free to contact me anytime on my
           socials or my mail:
         </p>
         <a href="mailto:contact@svenrisse.com" id="contact-mail"

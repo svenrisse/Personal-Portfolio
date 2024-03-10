@@ -10,10 +10,9 @@
         <span id="intro-description__job"> fullstack web developer</span>.
       </h1>
       <p class="intro-paragraph">
-        I'm a software engineer, with a passion for new and exiting technologies
+        I'm a junior software engineer, with a passion for new and exiting technologies
         and frameworks. <br />
-        Currently, I'm focused on diving deep into Frontend Development with
-        Next.js and React, and taking first steps into the Backend with Node.js.
+        Currently, I'm learning Go, after diving deep into the JavaScript World. 
       </p>
     </div>
     <Socials />
