@@ -30,13 +30,14 @@
   }
 }
 
+html {
+  height: 100%;
+}
 
 body {
   background-color: var(--navy);
   color: var(--white);
   font-family: var(--font-sans);
-  height: 100vh;
-  width: 100vw;
 }
 
 a {
